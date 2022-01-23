@@ -8,6 +8,7 @@ escape_key = 'escape'
 cwd = os.getcwd()
 
 folders = glob(os.path.join(cwd, 'stimuli', '*'))
+print(folders)
 
 all_files = {}
 for folder in folders:
@@ -42,7 +43,7 @@ for i in range(2):
             block.append(stim)  # Add the stimuli to the block
 
         set.append(block)  # And the block to the set
-        random.shuffle(set)
+        # random.shuffle(set)
 
     all_stimuli.append(set)  # And the set to the all stimuli list
 
