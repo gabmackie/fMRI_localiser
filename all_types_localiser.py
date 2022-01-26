@@ -12,7 +12,6 @@ cwd = os.getcwd()
 
 # Get all the folders in the stimuli folder
 folders = glob(os.path.join(cwd, 'stimuli', '*'))
-print(folders)
 
 # Add every movie file in those folders to our stimuli dict, using the folders as keys
 all_files = {}
@@ -87,6 +86,7 @@ for set in all_stimuli:
                 print('User requested to quit, ending experiment')
                 win.close()
                 core.quit()
+
 
 # Add a final rest block
 fix.draw()
